@@ -1,0 +1,29 @@
+.button-wrap {
+    text-align: right;
+    margin: 50px 20px;
+}
+
+.to-order {
+    height: 50px;
+    width: 200px;
+    font-size: 24px;
+    background-color: #ffbd00;
+    border: 1px solid #ffbd00;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.to-order a {
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+}
+.to-order:hover {
+    background-color: #ffb108;
+    border: 1px solid #ffb108;
+}
+
+@media (max-width: 520px) {
+    .button-wrap {
+        text-align: center;
+    }
+}

@@ -1,0 +1,139 @@
+.slider {
+    max-width: 770px;
+    height: 365px;
+    margin: 95px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.slider__top {
+    width: 770px;
+    list-style: none;
+    position: relative;
+}
+.slider__element{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 254px;
+    box-sizing: border-box;
+    opacity: 0;
+    z-index: 1;
+}
+.slider__element_visible {
+    opacity: 1;
+    z-index: 2;
+}
+.slider__text {
+    font-size: 16px;
+    font-family: "Times New Roman";
+    color: rgba(255, 255, 255, 0.851);
+    line-height: 1.875;
+    text-align: center;
+}
+.slider__name {
+    font-size: 14px;
+    font-family: "Times New Roman";
+    color: rgb(255, 255, 255);
+    line-height: 1.571;
+    text-align: center;
+    margin-top: 30px;
+}
+.slider__job {
+    font-size: 13px;
+    font-family: "Roboto";
+    color: rgba(255, 255, 255, 0.702);
+    line-height: 1.692;
+    text-align: center;
+}
+.slider__element img{
+    display: block;
+    text-align: center;
+    margin: 0 auto 45px auto;
+}
+
+.slider__bottom {
+    height: 70px;
+    width: 392px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider__photo-list{
+    width: 336px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+.slider__photo {
+    width: 46px;
+    cursor: pointer;
+}
+.slider__photo_big {
+    width: 70px;
+}
+.slider__arrow {
+    cursor: pointer;
+}
+@media (max-width: 800px) {
+    .slider {
+        width: auto;
+        margin: 95px auto;
+        padding: 0 15px;
+    }
+    .slider__top {
+        width: 100%;
+    }
+}
+@media (max-width: 680px) {
+    .slider {
+        height: 400px;
+        margin: 60px auto;
+    }
+}
+@media (max-width: 530px) {
+    .slider {
+        height: 450px;
+        margin: 60px auto;
+    }
+}
+@media (max-width: 440px) {
+    .slider {
+        height: 450px;
+        margin: 60px auto;
+    }
+    .slider__bottom {
+        width: 200px;
+    }
+    .slider__photo-list {
+        display: block;
+        width: 70px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .slider__photo {
+        position: absolute;
+        top: calc(50% - 35px);
+        opacity: 0;
+        z-index: 1;
+    }
+    .slider__photo_big {
+        position: absolute;
+        top: calc(50% - 35px);
+        opacity: 1;
+        z-index: 2;
+    }
+}
+@media (max-width: 410px) {
+    .slider {
+        height: 480px;
+    }
+}
+@media (max-width: 360px) {
+    .slider {
+        height: 500px;
+    }
+}
